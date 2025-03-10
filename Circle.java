@@ -1,12 +1,12 @@
 import java.util.*;
 
 
-public class CircleArea {
+public class Circle {
     // Attribute of the Circle class
     private double radius;
 
     // Constructor to initialize Circle object
-    public CircleArea(double radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
 
@@ -34,7 +34,7 @@ public class CircleArea {
         System.out.print("Enter the radius: ");
         double r = sc.nextDouble();
 
-        CircleArea circle = new CircleArea(r);
+        Circle circle = new Circle(r);
         circle.displayDetails();
 
     }

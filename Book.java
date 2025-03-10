@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-public class BookDetails {
+public class Book {
     // Attributes of the Book class
     private String title;
     private String author;
     private double price;
 
     // Constructor to initialize Book object
-    public BookDetails(String title, String author, double price) {
+    public Book(String title, String author, double price) {
         this.title = title;
         this.author = author;
         this.price = price;
@@ -33,7 +33,7 @@ public class BookDetails {
         System.out.print("Enter Book Price: ");
         double price = sc.nextDouble();
 
-        BookDetails b1 = new BookDetails(title, author, price);
+        Book b1 = new Book(title, author, price);
         b1.displayDetails();
 
     }

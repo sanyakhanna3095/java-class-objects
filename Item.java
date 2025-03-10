@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-public class InventoryItem {
+public class Item {
     // Attributes of the Item class
     private int itemCode;
     private String itemName;
     private double price;
 
     // Constructor to initialize Item object
-    public InventoryItem(int itemCode, String itemName, double price) {
+    public Item(int itemCode, String itemName, double price) {
         this.itemCode = itemCode;
         this.itemName = itemName;
         this.price = price;
@@ -38,7 +38,7 @@ public class InventoryItem {
         System.out.print("Enter Item Price: ");
         double price = sc.nextDouble();
 
-        InventoryItem item = new InventoryItem(code, name, price);
+        Item item = new Item(code, name, price);
         item.displayDetails();
 
         System.out.print("\nEnter quantity: ");
